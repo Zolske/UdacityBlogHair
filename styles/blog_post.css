@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Great Vibes";
-    src: url("/Fonts/GreatVibes-Regular.ttf");
+    src: url("Fonts/GreatVibes-Regular.ttf");
 }
 
 body {
@@ -113,11 +113,11 @@ p {
 }
 
 h2::after, h3::after {
-    content: url(/ZoltansBlog/images/line-break-right.svg);
+    content: url(ZoltansBlog/images/line-break-right.svg);
 }
 
 h2::before, h3::before {
-    content: url(/ZoltansBlog/images/line-break-left.svg);
+    content: url(ZoltansBlog/images/line-break-left.svg);
 }
 
 /*article {
@@ -165,14 +165,14 @@ footer {
 
 aside > ul {
     grid-area: sidebar;
-    list-style: url("/ZoltansBlog/images/favicon.png");
+    list-style: url("ZoltansBlog/images/favicon.png");
 }
 
 aside > h3::after {
-        content: url("/ZoltansBlog/images/favicon.png")
+        content: url("ZoltansBlog/images/favicon.png")
 }
 aside > h3::before {
-        content: url("/ZoltansBlog/images/favicon.png")
+        content: url("ZoltansBlog/images/favicon.png")
 }
 
 aside > h3 {

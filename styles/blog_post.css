@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Great Vibes";
+    src: url("/ZoltansBlog/Fonts/GreatVibes-Regular.ttf");
+}
+
+body {
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:    "logo logo"
+                            "nav nav"
+                            "title title"
+                            "author author"
+                            "article sidebar"
+                            "comment sidebar"
+                            "footer footer";
+}
+/*##################################################################*/
+/*######################### logo ###################################*/
+#logo {
+    grid-area: logo;
+    box-shadow: none;
+    border-radius: 0;
+    justify-self: center;
+}
+
+/*########################### nav ################################*/
+nav {
+    grid-area: nav;
+}
+
+nav > ul, footer > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    background: linear-gradient( 45deg , bisque , rgb(216, 149, 67) );
+    padding: 10px 0;
+    box-shadow: 4px 4px 4px rgb(75, 74, 72);
+}
+
+.nav_items {
+    text-decoration-line: none;
+    flex-basis: auto;
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);;
+    color: black;
+    font-size: large;
+    box-shadow: 10px 10px 10px rgb(75, 74, 72);
+    border-radius: 20px 0 20px 0;
+    padding: 2vh 2vw; 
+}
+
+.nav_image {
+    height: 5vh;
+    width: 5vw;
+    flex-basis: auto;
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);
+    padding: 10px;
+}
+/*############################# Title ##############################*/
+.title {
+    grid-area: title;
+    text-align: center;
+    font-family: "Great Vibes", serif;
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 5vw;
+}
+/*############################### author ############################*/
+.author {
+    grid-area: author;
+}
+
+.author > p {
+    font-family: "Great Vibes", serif;
+    font-size: 2em;
+}
+
+.author_image {
+    border-radius: 90px;
+    width: 5vw;
+}
+/*############################### main #############################*/
+main {
+    grid-area: article;
+    margin: 0 60px;
+}
+
+img {
+    float: left;
+    width: 10vw;
+    height: auto;
+    box-shadow: 10px 10px 10px rgb(75, 74, 72);
+    border-radius: 50px 0 50px 0;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+h2, h3 {
+    text-align: center;
+    text-shadow: 3px 4px rgba(75, 74, 72, 0.4);
+    clear: left;
+    padding-top: 1em;
+    font-family: Cambria;
+}
+
+p {
+    font-family: cursive;
+}
+
+h2::after, h3::after {
+    content: url(/ZoltansBlog/images/line-break-right.svg);
+}
+
+h2::before, h3::before {
+    content: url(/ZoltansBlog/images/line-break-left.svg);
+}
+
+/*article {
+    background: linear-gradient( 45deg , bisque , rgb(216, 149, 67) );
+    padding: 0 20px 20px;
+    box-shadow: 4px 4px 4px rgb(75, 74, 72);
+}*/
+
+/*##################### comment ##################################*/
+
+.comment {
+    grid-area: comment;
+    display: grid;
+    justify-content: center;
+    background: linear-gradient( 45deg , bisque , rgb(216, 149, 67) );
+    padding: 0 20px 20px;
+    box-shadow: 4px 4px 4px rgb(75, 74, 72);
+    padding-top: 20px;
+}
+
+/*###################### footer ###################################*/
+footer {
+    grid-area: footer;
+}
+
+.footer_items {
+    text-decoration-line: none;
+    flex-basis: auto;
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);;
+    color: black;
+    font-size: large;
+    box-shadow: 10px 10px 10px rgb(75, 74, 72);
+    border-radius: 20px 0 20px 0;
+    padding: 2vh 2vw; 
+}
+
+.footer_image {
+    height: 5vh;
+    width: 5vw;
+    flex-basis: auto;
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);
+    padding: 10px;
+}
+/*###################### sidebar ###################################*/
+
+aside > ul {
+    grid-area: sidebar;
+    list-style: url("/ZoltansBlog/images/favicon.png");
+}
+
+aside > h3::after {
+        content: url("/ZoltansBlog/images/favicon.png")
+}
+aside > h3::before {
+        content: url("/ZoltansBlog/images/favicon.png")
+}
+
+aside > h3 {
+    margin: 0 50px;
+}

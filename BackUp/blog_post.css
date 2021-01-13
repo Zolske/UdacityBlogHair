@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:    "logo logo"
+                            "navbar navbar"
+                            /*"author author"*/
+                            "title title"
+                            "author author"
+                            "article sidebar"
+                            "comment sidebar"
+                            "footer footer";
+}
+
+#logo {
+    grid-area: logo;
+    box-shadow: none;
+    border-radius: 0;
+    justify-self: center;
+}
+nav {
+    display: flex;
+    grid-area: navbar;
+}
+.nav_bar {
+    display: flex;
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav_iteams {
+    align-self: flex-start;
+    text-decoration: none;
+    margin: 0;
+    padding: 80px;
+    background: black;
+    color: bisque;
+    font-size: large;
+    box-shadow: 10px 10px 10px rgb(75, 74, 72);
+    border-radius: 50px 0 50px 0;
+    padding: 5px;
+}
+
+.nav_image {
+    align-self: flex-end;
+}
+ 
+.title {
+    grid-area: title;
+}
+
+main {
+    grid-area: article;
+}
+
+img {
+    float: left;
+    width: 10vw;
+    height: auto;
+    box-shadow: 10px 10px 10px rgb(75, 74, 72);
+    border-radius: 50px 0 50px 0;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+h2, h3 {
+    text-align: center;
+    text-shadow: 3px 4px rgba(75, 74, 72, 0.4);
+    clear: left;
+    padding-top: 1em;
+    font-family: Cambria;
+}
+
+p {
+    font-family: cursive;
+}
+
+h2::after, h3::after {
+    content: url(/ZoltansBlog/images/line-break-right.svg);
+}
+
+h2::before, h3::before {
+    content: url(/ZoltansBlog/images/line-break-left.svg);
+}
+
+article {
+    background: linear-gradient( 45deg , bisque , rgb(216, 149, 67) );
+    padding: 0 20px;
+    box-shadow: 4px 4px 4px rgb(75, 74, 72);
+}

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Great Vibes";
-    src: url("/ZoltansBlog/Fonts/GreatVibes-Regular.ttf");
+    src: url("/Fonts/GreatVibes-Regular.ttf");
 }
 body {
     background: linear-gradient( 45deg , rgb(216, 149, 67) , bisque);
@@ -25,7 +25,7 @@ body {
 /*########################### nav ################################*/
 nav {
     grid-area: nav;
-    background: ;
+    background: blue;
 }
 
 nav > ul, footer > ul {

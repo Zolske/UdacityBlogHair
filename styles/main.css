@@ -25,7 +25,6 @@ body {
 /*########################### nav ################################*/
 nav {
     grid-area: nav;
-    background: blue;
 }
 
 nav > ul, footer > ul {
